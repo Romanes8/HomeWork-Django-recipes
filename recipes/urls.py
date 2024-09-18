@@ -19,7 +19,5 @@ from calculator import views
 
 urlpatterns = [
     path('', views.main),
-    path('omlet/', views.omlet),
-    path('pasta/', views.pasta),
-    path('buter/', views.buter),
+    path('<str:recipe_str>/', views.recipe),
 ]
